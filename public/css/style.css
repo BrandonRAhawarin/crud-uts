@@ -1,0 +1,172 @@
+/* Style untuk tabel artikel */
+.article-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.article-table th,
+.article-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #dd0c0c;
+}
+
+.article-table th {
+    background-color: #ee4d0d;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    border-top: 1px solid #dfd5d5;
+}
+
+.article-table tbody tr:hover {
+    background-color: #557f39;
+    transition: background-color 0.3s ease;
+}
+
+.article-table .btn {
+    padding: 5px 10px;
+    margin-right: 5px;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+
+/* Responsif untuk layar kecil */
+@media screen and (max-width: 600px) {
+    .article-table {
+        border: 0;
+    }
+
+    .article-table caption {
+        font-size: 1.3em;
+    }
+
+    .article-table thead {
+        border: none;
+        clip: rect(0 0 0 0);
+        height: 1px;
+        margin: -1px;
+        overflow: hidden;
+        padding: 0;
+        position: absolute;
+        width: 1px;
+    }
+
+    .article-table tr {
+        border-bottom: 3px solid #dd1717;
+        display: block;
+        margin-bottom: .625em;
+    }
+
+    .article-table td {
+        border-bottom: 1px solid #e21212;
+        display: block;
+        font-size: .8em;
+        text-align: right;
+    }
+
+    .article-table td::before {
+        content: attr(data-label);
+        float: left;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .article-table td:last-child {
+        border-bottom: 0;
+    }
+}
+.welcome-container {
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(228, 14, 14);
+}
+
+.welcome-card {
+    background-color: rgba(246, 238, 238, 0.9);
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+
+.welcome-title {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.welcome-text {
+    color: #555;
+    font-size: 1.1em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+body {
+    background-color: #f10b0b; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Jenis font */
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    background-color: #5c10c7; /* Warna latar belakang */
+    font-family: Arial, sans-serif; /* Jenis font */
+    margin: 0;
+    padding: 0;
+}
+table {
+    background-color: #c3f449;
+}
+.container {
+    max-width: 1200px; /* Lebar maksimum kontainer */
+    margin: 0 auto; /* Pusatkan kontainer */
+    padding: 20px; /* Ruang di dalam kontainer */
+    background-color: white; /* Warna latar belakang kontainer */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan kontainer */
+    border-radius: 8px; /* Sudut membulat */
+}
+
+h1 {
+    color: #333; /* Warna teks untuk judul */
+    text-align: center; /* Pusatkan teks */
+}
+
+.laptop-list {
+    list-style-type: none; /* Hilangkan poin daftar */
+    padding: 0; /* Hilangkan padding */
+}
+
+.laptop-item {
+    padding: 15px; /* Ruang di dalam item */
+    border-bottom: 1px solid #ddd; /* Garis pemisah antar item */
+}
+
+.laptop-item:last-child {
+    border-bottom: none; /* Hilangkan garis bawah untuk item terakhir */
+}
+
+.welcome-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto 0;
+    padding: 10px;
+    background-color: #6e8efb;
+    color: rgb(181, 19, 19);
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.welcome-button:hover {
+    background-color: #5c7cfa;
+}
